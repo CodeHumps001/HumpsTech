@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  /* gap: 1px; */
+}
+.hum .hidden {
+  display: none;
+  transition: 0.5s;
+}
+.sidebar {
+  width: 70px;
+  height: 100vh;
+  background-color: transparent;
+  padding: 10px;
+  transition: 0.5s;
+}
+.expand {
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(41, 39, 39);
+  transition: 0.5s;
+}
+.hum {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.hum button {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.sidebar .hum button span {
+  width: 30px;
+  height: 3px;
+  margin: 3px;
+  border: 1px solid orange;
+  background-color: orange;
+  transition: 0.5s;
+}
+.hum button span:nth-child(2) {
+  width: 25px;
+}
+.btn2 {
+  display: hidden;
+  /* width: 33px;
+  height: 33px; */
+  background: none;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: 0.5s;
+}
+.content {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background: blueviolet;
+  display: flex;
+}
+.content .header {
+  width: 100%;
+  background: red;
+  height: 70px;
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 10px;
+}
+.content .header .nav ul {
+  display: inline-flex;
+  color: aliceblue;
+  gap: 10px;
+}
+.header .nav ul li {
+  list-style: none;
+}
